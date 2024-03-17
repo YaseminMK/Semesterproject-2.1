@@ -1,13 +1,114 @@
 * {
-    background-color: #F9F7F0;
     font-family: 'Mulish',sans-serif;
 
 }
+body {
+    padding: 0;
+    margin:0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+
 h1{
 
 }
 
-ul {
-    text-decoration: none;
+h2 
+
+ul li {
     list-style: none;
+    text-decoration: none;
 }
+
+footer{
+    background-color: #072A40;
+}
+
+
+/* NAVBAR */
+
+.Navigation-to-page {
+    color: #072A40;
+    align-content: center;
+    
+}
+
+#Front-page{
+    background-color: #072A40;
+
+}
+
+.Navigation-img {
+    background-color: #072A40;
+}
+
+#About {
+    background-color: #178CA4;
+}
+
+
+
+#Header-Slider { 
+    position: relative;
+    width: 300px; 
+    margin: 20px auto;
+}
+#Header-img{
+    position: absolute;
+    width: 300px;
+    left: 0px;
+    top: 0px;
+    animation-name:fading;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes fading {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+#Header-slider {
+    overflow: hidden;
+    height: 800px;
+    width: 1200px;
+    margin-left: 360px;
+    margin-top: 360px;
+
+}
+
+@-webkit-keyframes slide_animation {
+    0% {left:0px;}
+    10% {left:0px;}
+    20% {left:1200px;}
+    30% {left:1200px;}
+    40% {left:2400px;}
+    50% {left:2400px;}
+    60% {left:1200px;}
+    70% {left:1200px;}
+    80% {left:0px;}
+    90% {left:0px;}
+    100% {left:0px;}
+    
+}
+
+#Header-imgs {
+    width: 0px;
+    height: 800px;
+    marigin: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 33s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+
+
+#Header-img {
+    height: 800px;
+    width: 1200px;
+    position: relative;
+    float: left;
+
