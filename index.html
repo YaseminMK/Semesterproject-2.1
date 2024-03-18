@@ -34,25 +34,32 @@
                 </ul>
             </nav>
         </section #id=""Front-page"">
-        <header>
-            <h1>COMMUNITY SCIENCE MUSEUM</h1>
-            <h2>-Explore together</h2>
-            <div id="Header-slider">
-                <div id="Header-imgs">
-                    <div id="Header-img">
-                        <img src="images/1.Homepage/Museum-front--.png" alt="Picture of the museum building">
-                    </div>
-                    <div id="Header-img"></div>
-                        <img src="images/1.Homepage/exhibition-front.png" alt="Picture of a bright exhbition room">
-                    </div>
-                    <div id="Header-img">
-                        <img src="images/1.Homepage/AI-front.png" alt="Picture of a boy wearing AI-glasses">
-                    </div>
-                    <div id="Header-img">
-                        <img src="images/1.Homepage/PILOT-front.png" alt="Pilot in a simulation from the museum">
-                    </div>
+            <header>
+                <h1>COMMUNITY SCIENCE MUSEUM</h1>
+                <h2>-Explore together</h2>
+                <div id="Header-imgs" style="max-width: 500px;">
+                    <img src="images/1.Homepage/Museum-front--.png" alt="Picture of the museum building" style="width:100%">
+                    <img src="images/1.Homepage/exhibition-front.png" alt="Picture of a bright exhbition room" style="width:100%">
+                    <img src="images/1.Homepage/AI-front.png" alt="Picture of a boy wearing AI-glasses" style="width:100%">
+                    <img src="images/1.Homepage/PILOT-front.png" alt="Pilot in a simulation from the museum"style="width:100%">  
                 </div>
-            </div>
+            <script>
+                var myIndex = 0;
+                carousel ();
+
+                function carousel (){
+                    var i;
+                    var x = 
+                document.getElementsByClassName("Header-imgs");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 9000);    
+                }
+            </script>
         </header>
         <main>
             <div class="Navigation-img">
