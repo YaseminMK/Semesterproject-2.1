@@ -45,65 +45,27 @@ footer{
 }
 
 .slider {
-   width:1440px;
-   height: 400px; 
-   background: url("../images/1.Homepage/Museum-front--.png") no-repeat;
-   background-size: cover;
-   background-color: #072A40;
-   animation: slide 20s infinite;
-   transition: 5s;
-   animation-direction: alternate-reverse;
-   animation-play-state: running;
-   animation-timing-function: ease-in-out;
-   animation-iteration-count: infinite;
-
-}
-
-@keyframes slide {
-    0%, 20%{
-        background: url("../images/1.Homepage/Museum-front--.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        opacity: 1;
-
-    }
-    25%, 45% {
-        opacity: 0.25;
-        background-size: cover;
-    }
-    50%, 70% {
-        background: url("../images/1.Homepage/exhibition-front.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        opacity: 1;
-    }
-    75%, 95% {
-        opacity: 0.25;
-        background-size: cover;
-    }
-    
-    100%, 120% {
-        background: url("../images/1.Homepage/1440.jpeg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        opacity: 1;
-    }
-
-    125%, 145% {
-        opacity: 0.25;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    150%, 170% { 
-        background: url("../images/1.Homepage/PILOT.jpeg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        opacity: 1;
-    
-    }
-    175%, 195% {
-        opacity: 0.25;
-        background-size: cover;
-    }
-}
+    width: 1440px;
+    height: 530px; 
+    background: none; /* Remove background color */
+    animation: slide 20s infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+ }
+ 
+ @keyframes slide {
+     0%, 20% {
+         background: url("../images/1.Homepage/Museum-front--.png") no-repeat;
+         background-size: cover;
+     }
+     25% {
+         background: url("../images/1.Homepage/exhibition-front.png") no-repeat;
+         background-size: cover;
+     }
+     50% {
+         background: url("../images/1.Homepage/1440.png") no-repeat;
+         background-size: cover;
+     }
+     75% {
+         background: url("../images/1.Homepage/PILOT.png") no-repeat;
+         background-size: cover;
