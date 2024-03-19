@@ -45,27 +45,34 @@ footer{
 }
 
 .slider {
-    width: 1440px;
-    height: 530px; 
-    background: none; /* Remove background color */
-    animation: slide 20s infinite;
-    animation-direction: alternate-reverse;
-    animation-timing-function: ease-in-out;
- }
- 
- @keyframes slide {
-     0%, 20% {
-         background: url("../images/1.Homepage/Museum-front--.png") no-repeat;
-         background-size: cover;
-     }
-     25% {
-         background: url("../images/1.Homepage/exhibition-front.png") no-repeat;
-         background-size: cover;
-     }
-     50% {
-         background: url("../images/1.Homepage/1440.png") no-repeat;
-         background-size: cover;
-     }
-     75% {
-         background: url("../images/1.Homepage/PILOT.png") no-repeat;
-         background-size: cover;
+   width:1440px;
+   height: 530px; 
+   background: url("../images/1.Homepage/Museum-front--.png") no-repeat;
+   background-size: cover;
+   animation: slide 20s infinite;
+   transition: 5s opaque;
+   animation-direction: alternate-reverse;
+   animation-play-state: running;
+   animation-timing-function: ease-in-out;
+   animation-iteration-count: infinite;
+
+}
+
+@keyframes slide {
+    0%, 20% {
+        background: url("../images/1.Homepage/Museum-front--.png");
+        background-size: cover;
+    }
+    25% {
+        background: url("../images/1.Homepage/exhibition-front.png");
+        background-size: cover;
+    }
+    50% {
+     background: url("../images/1.Homepage/1440.png");
+        background-size: cover;
+    }
+    75% {
+      background: url("../images/1.Homepage/PILOT.png");
+      background-size: cover;
+    }
+}
