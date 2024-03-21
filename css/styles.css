@@ -1,10 +1,12 @@
 * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-family: 'Mulish',sans-serif;
 }
 body {
     padding: 0;
-    margin:0;
-    background-color: #F9F7F0;
+    margin:0;   
 }
 
 h1{
@@ -22,6 +24,12 @@ footer{
     background-color: #072A40;
 }
 
+#front-page {
+    background-color: #072A40;
+    font-style: ;
+}
+
+
 
 /* NAVBAR */
 
@@ -31,9 +39,8 @@ footer{
     
 }
 
-#Front-page{
+#front-page {
     background-color: #072A40;
-
 }
 
 .Navigation-img {
@@ -42,37 +49,4 @@ footer{
 
 #About {
     background-color: #178CA4;
-}
-
-.slider {
-   width:1440px;
-   height: 530px; 
-   background: url("../images/1.Homepage/Museum-front--.png") no-repeat;
-   background-size: cover;
-   animation: slide 20s infinite;
-   transition: 5s opaque;
-   animation-direction: alternate-reverse;
-   animation-play-state: running;
-   animation-timing-function: ease-in-out;
-   animation-iteration-count: infinite;
-
-}
-
-@keyframes slide {
-    0%, 20% {
-        background: url("../images/1.Homepage/Museum-front--.png");
-        background-size: cover;
-    }
-    25% {
-        background: url("../images/1.Homepage/exhibition-front.png");
-        background-size: cover;
-    }
-    50% {
-     background: url("../images/1.Homepage/1440.png");
-        background-size: cover;
-    }
-    75% {
-      background: url("../images/1.Homepage/PILOT.png");
-      background-size: cover;
-    }
 }
