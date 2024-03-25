@@ -3,19 +3,22 @@
     margin: 0;
     padding: 0;
     font-family: 'Mulish',sans-serif;
-    font-style: normal;
     overflow-x: hidden;
+    max-width: 100%;
+    
 }
+
+
 
 
 h1 {
     color: #f9f7f0;
-    background-color: #072a40;
     width: 100%;
-    font-size: 60px;
-    font-weight: 200;
+    font-size: 5rem;
+    font-weight: 300;
     font-style: italic;
-    text-align: center;
+    text-transform: uppercase;
+    text-align: start;
 }
 
 p {
@@ -23,49 +26,7 @@ p {
 } 
 
 
-#front-pg {
-    font-size: 40px;
-    font-weight: 200;
-    font-style: italic;
-    text-align: center;
 
-}
-
-
-#back-button {
-    color: #178CA4;
-    text-decoration: none;
-}
-
-
-
-footer {
-    color: #f9f7f0;
-    background-color: #072a40;
-}
-
-.Navigatiion-img{
-    background-color: #072a40;
-}
-
-/*Front-page*/
-
-#Front-page,
-#Events {
-    background-color: #072a40;
-}
-
-#About {
-    background-color: #178CA4;
-    color: #f9f7f0;
-    font-style:normal;
-}
-
-.front-img {
-    align-items: center;
-    justify-content: center;
-
-}
 
 /*Nav-bar*/
 
@@ -141,3 +102,76 @@ footer {
     transition: all 0.2s ease-in-out;
     }
 }
+
+/*Main-page*/
+
+#front-page {
+    justify-content: center;
+    background-color: #072a40;
+    padding: 5rem 2.5rem;
+}
+#main-header-txt {
+    position: relative;
+    justify-content: space-evenly;
+    text-align: left;
+    padding-top: 1.5rem;
+}
+
+#front-pg-txt {
+    position: relative;
+    font-size: 2.30rem;
+    font-style: italic;
+    font-weight: 200;
+    text-align: right;
+    justify-content: space-between;
+}
+
+#front-img{
+   
+}
+
+//*
+.img-nav-menu {
+    text-transform: uppercase;
+    color: #f9f7f0;
+    font-style: italic;
+    font-size;
+    text-decoration: none;
+    width: 100%;  
+}
+*//
+
+.exhibition-spaces{
+    max-width: 100%;
+    height: auto;
+
+}
+
+.exhibitions {
+    font-size: 2.25rem;
+    color: #072a40;
+    top: 1.25rem;
+    bottom: 1.25rem;
+    left: 1.25rem;
+}
+
+
+
+
+
+/*Footer*/
+
+footer {
+    color: #f9f7f0;
+    background-color: #072a40;
+}
+
+.img-nav-menu {
+    background-color: #072a40;
+
+}
+
+
+
+
+
