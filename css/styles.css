@@ -9,22 +9,38 @@
 }
 
 
-
+main {
+    background-color: #f9f7f0;
+}
 
 h1 {
     color: #f9f7f0;
     width: 100%;
     font-size: 5rem;
-    font-weight: 300;
+    font-weight: 350;
     font-style: italic;
-    text-transform: uppercase;
     text-align: start;
 }
 
-p {
- color: #f9f7f0;
-} 
+h2 {
+    font-size: 2.1rem;
+    text-transform: uppercase;
+}
 
+
+
+a {
+    text-decoration: none;
+}
+
+a:visited { text-decoration: none; color:#f9f7f0; }
+a:hover { text-decoration: none; color:#808080; }
+a:focus { text-decoration: none; color:y#808080; }
+a:hover, a:active { text-decoration: none; color:#808080; }
+
+img {
+    object-fit: cover;
+}
 
 
 
@@ -37,7 +53,6 @@ p {
     align-items: center;
     list-style: none;
     position: relative;
-    background-color: #f9f7f0;
     padding: 12px 20px;
 
 }
@@ -49,10 +64,10 @@ p {
     display: inline-block;
     text-decoration: none;
     color: #072a40;
+    text-transform: uppercase;
     text-align: center;
     transition: 0.15s ease-in-out;
     position: relative;
-    text-transform: uppercase;
 }
 
 .menu li a::after {
@@ -105,72 +120,158 @@ p {
 
 /*Main-page*/
 
-#front-page {
+#front-page,
+#main-header-txt,
+#front-pg-txt,
+#front-img {
     justify-content: center;
+    padding: 2rem 2.5rem;
     background-color: #072a40;
-    padding: 5rem 2.5rem;
-}
-#main-header-txt {
     position: relative;
+    width: 100%;
+
+}
+
+#main-header-txt {
     justify-content: space-evenly;
+    text-transform: uppercase;
     text-align: left;
-    padding-top: 1.5rem;
+    bottom: 1.5rem;
+    left: 1.5rem;
 }
 
 #front-pg-txt {
-    position: relative;
     font-size: 2.30rem;
     font-style: italic;
     font-weight: 200;
     text-align: right;
     justify-content: space-between;
+    bottom: 4.5rem;
+    right: 8.5rem;
 }
 
+
 #front-img{
-   
+    padding: 0.2rem 0.6rem;
+    bottom: 5.6rem;
+}
+
+
+/*Navigation containers*/
+
+
+.img-nav-menu,.grid-container {
+    position: relative;
+    font-size: 2.0rem;
+    font-style: italic;
+    font-weight: 250;
+    text-transform: uppercase;
+    color: #f9f7f0;
+    letter-spacing: 0.3rem;
+    max-width: 100%;
+  
+
 }
 
 .exhibition-spe {
+    top: -9.5rem;
+    position: relative;
+    padding: 10.5rem 4.5rem;
+    bottom: 22.5rem;
+    right: 0.5rem;
+    background-color: #072a40;
     max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-    padding: 5px;
+}
+#exhibitions {
+    position: relative;
+    left: 55rem;
+    bottom: 29.67rem;
+    color: #072a40;
+    font-size: 2.5rem;
 }
 
-.explore,
-.exhibition-space,
-.AI-glasses,
-.visit {
-    max-width: 100%;
-    height: auto;
-}
-
+/*grind-container*/
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap 8px;
     justify-content: center;
     align-items: center;
+    padding:11.5rem;
+    bottom: 14rem;
+    left: -0.5rem;
+    grid-gap: 1.5rem;
+    
 
 }
-
-.main-container,.grid-container{
+.explore-txt,
+.spaces-txt,
+.get-txt,
+.visit-txt {
     position: relative;
-    width: 100%;
-    height: 100%;
-    text-transform: uppercase;
-    font-size: 28px;
-    font-style: italic;
-    text-decoration: none;
-    color: #f9f7f0;
+    bottom: 5rem;
+    left: 5.5rem;
+  }
+  
+
+
+/*About the museum*/
+
+.about {
+    background-color:#178ca480;
+    padding-bottom: 
+}
+.content-about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: baseline;
+    justify-content: flex-end;
+    position: relative;
+  
+}
+.img-about {
+    position: relative;
+    right: 21.5rem;
+    bottom: 24.5rem;
+    padding: 29rem;
+
 }
 
-.exhibitions {
-    color: #072a40;
-    position: absolute;
-    bottom: 12px;
-    right: 20px;
+/*
+.p-about {
+    position: relative;
+    padding: 29rem;
+    align-self: flex-end;
+    left: 16rem;
+    color:#072a40;
 }
+*/
+
+.p-about-1 {
+    position: relative;
+    padding: 29rem;
+    left: 16rem;
+    bottom: 107.5rem;
+   
+}
+.p-about-2 {
+    position: relative;
+    padding: 29rem;
+    align-self: flex-end;
+    left: 16rem;
+    bottom:163.5rem;
+}
+
+.p-about-3 {
+    position: relative;
+    padding: 29rem;
+    align-self: flex-end;
+    left: 16rem;
+    bottom: 220.5rem;
+}
+
+
 /*Footer*/
 
 footer {
@@ -178,10 +279,6 @@ footer {
     background-color: #072a40;
 }
 
-.img-nav-menu {
-    background-color: #072a40;
-
-}
 
 
 
