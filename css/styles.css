@@ -218,9 +218,6 @@ img {
 
 .about {
     background-color:#178ca480;
-    height: 50rem;
-    margin: 0 auto;
-    position absolute;
 }
 .content-about {
     display: flex;
@@ -230,6 +227,7 @@ img {
     align-content: baseline;
     justify-content: flex-end;
     position: relative;
+    background-size: 100rem;
   
 }
 .img-about {
