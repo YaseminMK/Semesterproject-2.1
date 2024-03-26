@@ -218,7 +218,9 @@ img {
 
 .about {
     background-color:#178ca480;
-    padding-bottom: 
+    height: 50rem;
+    margin: 0 auto;
+    position absolute;
 }
 .content-about {
     display: flex;
