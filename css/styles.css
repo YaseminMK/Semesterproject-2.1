@@ -1,17 +1,18 @@
 *{
     box-sizing: border-box;
-    margin:0;
+    margin: 0;
     padding: 0;
-    font-family: 'Mulish',sans-serif;
+    border-inline: 0.5rem solid #f9f7f0;
+    font-family: 'Mulish', sans-serif;
     overflow-x: hidden;
-    width: 100%;
+    max-width: 100%;
     
 }
 
 
 main {
-    background-color: #f9f7f0;
-    min-height: 100vh;
+   
+  
 }
 
 h1 {
@@ -29,7 +30,6 @@ h2 {
 }
 
 
-
 a {
     text-decoration: none;
 }
@@ -41,6 +41,7 @@ a:hover, a:active { text-decoration: none; color:#808080; }
 
 img {
     object-fit: cover;
+    border: #f9f7f0;
 }
 
 
@@ -50,17 +51,22 @@ img {
 .nav-bar {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 13rem;
     list-style: none;
     position: relative;
-    padding: 12px 20px;
-
+    padding: 40px 20px;
+    background: #f9f7f0;
 }
 
-.logo img {width: 170px;}
+.logo{
+    align-self: start;
+}
+
+.logo {width: 12rem;}
 .menu {display: flex;}
-.menu li {padding-left: 30px}
+.menu li {padding-left: 0.55rem}
 .menu li a {
     display: inline-block;
     text-decoration: none;
@@ -124,25 +130,36 @@ img {
 .front-page {
     display: flex;
     background-color: #072a40;
-    color:#f9f7f0;
+    color: #f9f7f0;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 5rem 2.5rem;
+    padding: 6rem 5.5rem;
+    border: 6.5rem solid #f9f7f0;
+    margin: block;
 }
 
 
 
-#main-header-txt {
+.main-header-txt {
     text-transform: uppercase;
+    border: #f9f7f0;
+    font-size: 6rem;
 }
 
-#front-pg-txt {
+.front-pg-txt {
     position: relative;
-    font-size: 2.30rem;
+    font-size: 2.3rem;
     font-style: italic;
-    font-weight: 200;
-    left: 60rem;
+    font-weight: 100;
+    left: 18rem;
+    bottom: 0.5rem;
+    border: #f9f7f0;
 }
+
+.front-img {
+    border: #f9f7f0;
+}
+
 
 /*Navigation to pages*/
 .nav-containers {
@@ -153,7 +170,7 @@ img {
     color: #f9f7f0;
     letter-spacing: 0.3rem;
     max-width: 100%;
-    box-shadow: ;
+ 
 
 }
 .nav-exhibition-spaces {
@@ -163,9 +180,14 @@ img {
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
+    padding: 6rem 5.5rem;
+    border: 6.5rem solid #f9f7f0;
+
 }
 .img-exhibition {
     padding: 0.5rem 2.5rem;
+    background-color: ##f9f7f0;
+    border: #f9f7f0;
 
 }
 
@@ -185,7 +207,8 @@ img {
     grid-template-columns: 1fr 1fr;
     grid-auto-columns: 1f;
     align-items: start;
-    padding: 6.5rem;
+    padding: 7rem 9.5rem;
+    border: 4.5rem solid #f9f7f0;
 
 }
 
@@ -236,7 +259,7 @@ img {
 .about {
 
     border: 1rem solid #178ca480;
-    background: #178ca480;
+    /*background: #178ca480;*/
     display: grid;
     grid-gap: 1.5rem;
     grid-template-columns: 1fr 1fr 1fr;
@@ -297,43 +320,94 @@ img {
     padding: -2.5rem;
 }
 
+/*
+.events{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.h-events {
+    font-size: ;
+    align-self: center;
+
+}
+.rectangels{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 1.5rem;
+
+}
+/*
+
 
 /*Events*/
 
 .events {
-    background-color: #072a40;
+    background: #072a40;
     color: #f9f7f0;
+    font-style: italic;
+}
+
+
+.h-events {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    font-weight: 100;
+
+}
+
+.rectangels {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr
-
-   
+    grid-template-columns:  20rem 20rem 20rem;
+    grid-template-rows: 30rem 30rem 30rem;
+    grid-gap: 5rem;
+    align-items: center;
+    padding: 1rem 9rem;
 }
 
-#h-events {
-   
-}
+
+
+
+
+
+
+
+
 
 .rectangle-1 {
-    grid-column-start: 1;
+   /* grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
-    grid-row-end: 2;
-    background-color: aqua;
+    grid-row-end: 2; */
+    background-color:	#178ca460;
 }
 
 .rectangle-2 {
+    /*
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+    */
+    background-color: #178ca4;
+
 }
 
 .rectangle-3 {
+    /*
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-end: 2;*/
+    background-color: #178ca460;
+
 }
+
 
 
 
