@@ -427,19 +427,56 @@ footer {
     align-self: unset;
     position: relative;
     bottom: 2.5rem;
-    right: 18.5rem;
+    right: 6.5rem;
    
 }
 
 .footer-l 
+
+
+.contact-txt {
+    
+}
 .contact {
     grid-area: contact;
-    font-size: 1.0rem;
     align-self: self-end;
-    order: -2;
+    font-weight: 100;
+    position: relative;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    right: 22.5rem;
+    bottom: -1.5rem;
+}
+    
+
 }
 
+.contact-txt {
+    font-weight: 100;
+    position: relative;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+   
+}
+.contact-txt-2{
+    text-transform: lowercase;
+    font-size: 1.0rem;
+    position: relative;
+    bottom: -0.5rem;
+    right: -1.5rem;
+
+
+}
+.contact-txt-3 {
+ font-size: 1.0rem;
+ position: relative;
+ bottom: -0.5rem;
+ right: -1.5rem;
+
+}
+font-size: 1.0;
 .footer-list {
+
     grid-area: footer-list;
 }
 
