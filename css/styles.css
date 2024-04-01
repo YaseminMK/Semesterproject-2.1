@@ -288,8 +288,12 @@ img {
     margin: 2rem;
     font-style: italic;
     font-weight: 100;
-    border: 5.5rem solid #178ca480;
+    border: .5rem solid #178ca480;
     background: #178ca480;
+    text-transform: lowercase;
+    text-transform: capitalize;
+    font-style: 1.5rem;
+
 }
 
 .header-about {
@@ -302,7 +306,7 @@ img {
 }
 
 .img-about {
-    grid-area: 41 / 3 / -2 / -4;
+    grid-area: 1 / 1/ 1 / 1;
     justify-self: center;
 
 }
@@ -318,20 +322,22 @@ img {
 
 
 .p-about-1 {
-    top: 2.5rem;
+    grid-area: 2/ 1 /2 /2 
+    /*top: 2.5rem;*/
 
 }
 
 .p-about-2 {
-  
-    left: -5.5rem; */
-    top: 3.5rem;
+    grid-area: 2/ 3/2 /3
+    /*left: -5.5rem; *
+    top: 3.5rem;*/
     
 
 }
 
 .p-about-3 {
-    top: 5.5rem;
+    grid-area: 3/ 3/3/3
+   /* top: 5.5rem;*/
     
    
 }
