@@ -28,7 +28,7 @@ background-color: ;
 
 main {
 grid-area: main;
-background-color #blue;
+background-color:aqua;
 margin: 2rem;
 }
 
@@ -281,63 +281,68 @@ img {
 /*About the museum-container*/
 
 .about {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 0.5rem;
-    align-items: center;
-    margin: 2rem;
-    font-style: italic;
-    font-weight: 100;
-    border: .5rem solid #178ca480;
-    background: #178ca480;
-    text-transform: lowercase;
-    text-transform: capitalize;
-    font-style: 1.5rem;
-
+  margin: 2rem;
+  font-style: italic;
+  font-weight: 100;
+  border: 1.5rem solid #178ca480;
+  background: #178ca460;
+  text-transform: lowercase;
+  text-transform: capitalize;
+  font-size: 1rem;
+  letter-spacing: normal;
+   
 }
 
 .header-about {
     font-size: 2.1rem;
-    top: 2.5rem;
-    left: -44.5rem;
-    position: relative;
-    font-weight: 300;
-    padding: 3rem 0.5rem;
+    grid-area: 1 / 1/ 3/ 3;
+    text-transform: uppercase;
+    padding: 1.5rem;
 }
 
 .img-about {
-    grid-area: 1 / 1/ 1 / 1;
-    justify-self: center;
-
+  padding: 1.5rem 13.5rem;
+  right: 12.5rem;
+  position: relative;
 }
 
+.about-txt {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    padding-left: 15.5rem;
+    bottom: 1.5rem;
+}
 .p-about-1,
 .p-about-2,
 .p-about-3 {
     position: relative;
-    right: 70.5px
+    padding: 0.5rem 1.5rem;
+
+   
+  
 
 }
 
 
 
 .p-about-1 {
-    grid-area: 2/ 1 /2 /2 
-    /*top: 2.5rem;*/
+    grid-area: 2/2/ -5/-1;
 
 }
 
 .p-about-2 {
-    grid-area: 2/ 3/2 /3
-    /*left: -5.5rem; *
-    top: 3.5rem;*/
+    grid-area: 3/ 2/3 /-1;
+
     
 
 }
 
 .p-about-3 {
-    grid-area: 3/ 3/3/3
-   /* top: 5.5rem;*/
+    grid-area: 4/3/4/5;
+  
     
    
 }
@@ -346,10 +351,8 @@ img {
 /*Events*/
 
 .events {
-    background: #072a40;
     color: #f9f7f0;
     font-style: italic;
-    margin: 2rem;
 }
 
 
@@ -368,7 +371,7 @@ img {
     display: grid;
     grid-template-columns: 20rem 20rem 20rem;
     grid-template-rows: 40rem auto;
-    grid-gap: 5rem;
+    grid-gap: 1.5rem;
     justify-items: center;
     justify-content: center;
     text-align: center;
@@ -413,155 +416,126 @@ img {
 
 /*Footer*/
 
-/* footer {
-    padding: 10.1rem 5.5rem;
-    background-color: #072a40;
-    /*margin: 2rem;*/
-    /*border: 3.2rem solid #072a40;
-    text-transform: uppercase;
+.footer-1 {
+    background: #072a40;
+    padding-left: 8.5rem;
+  }
+
+ 
+  .footer, .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .footer-row,
+    .footer-col h4 {
     color: #f9f7f0;
-    font-style: italic;
-    max-width: 100%;
-    grid-area: footer;
-}
- 
-
-
-
-/*.footer-container {
-    display: grid;
-    grid-template-columns: repeat(2, 10rem);
-    grid-template-rows: 7rem auto;
-}
-
-
-
-
-
-    
-.contact {
-    grid-area: 2 / 1 / 2 / 1;
-    font-size: 1.5rem;
-    right: 22.5rem;
-}
-    
-
-.contact-txt {
-   font-size: 1.2rem;
-   text-decoration: none;
-}
-.contact-txt-2{
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  .footer-col,
+  .links {
+    margin-top: 1.25rem;
+  }
+  .footer-col,
+  .links li {
+    list-style: none;
+    margin-bottom: 1.25rem;
+  }
+  .footer-col,
+  .links li a {
+    text-decoration: none;
+    color: #f9f7f0;
+  }
+  .footer-col .links li a:hover {
+    color:#f9f7f0;
+  }
+  .footer-col p {
+    margin: 1.25rem 0;
+    color: #f9f7f0;
+    max-width: 18.75rem;
     text-transform: lowercase;
-    font-size: 1.0rem;
- 
-}
-
-
-
- .contact-txt-3 {
- font-size: 1.0rem;
- }
-
-
-
-.footer-list {
- grid-area: 2 / 2 / 1 / 2;
- display: flex;
- flex-direction: column;
- flex-wrap: wrap;
- align-items: baseline;
- justify-content: center;
-}
-
-.footer-list-2 {
-    grid-area: 1 / 3 / 1 / 3;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    justify-content: space-evenly;
-}
-
-.buttons {
-    grid-area: 1 / 4 / 4/ 5;
-    font-weight: 100;
+  }
+  .footer-col form {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: stretch;
-    justify-content: center;
-}
-
-
-.updated {
-    font-size: 1.5rem;
-    padding: 1.5rem;
-    font-style: italic;
-}
-
-.email {
-    font-size: 1.0rem;
-    border: 0.01rem solid #f9f7f0;
-    padding: 0.20rem 0.5rem;
-    text-transform: lowercase;
-    margin: 6rem;
-    position: relative;
-    bottom: 6.5rem;
-    right: 3.5rem;
-}
-
-
-.join {
-    font-size: 1.0rem;
-    border: 0.10rem solid #f9f7f0;
-    padding: 0.20rem 1.5rem;
-    margin: 1.5rem;
-    text-align: center;
-    margin: 7.5rem;
-    position: relative;
-    bottom: 18.5rem;
-    left: -3.4rem;
-   
-
-}
-
-.social-media {
-    grid-area: 2/ 5/ 5 / 5;
+    gap: 0.312rem;
+  }
+  .footer-col input {
+    height: 2.5rem;
+    border-radius: 0.37rem;
+    background: none;
+    outline: none;
+    caret-color: #f9f7f0;
+    color: #f9f7f0;
+    padding-left: 0.625rem;
+  }
+  .footer-col input::placeholder {
+    color: #f9f7f0;
+  }
+   .footer-col form button {
+    background: #f9f7f0;
+    outline: none;
+    border: none;
+    padding: 0.625rem 1.06rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s ease;
+  }
+  .footer-col form button:hover {
+    background: #f9f7f0;
+  }
+  .footer-col .icons {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: space-between;
+    margin-top: 0.53rem;
+    gap: 0.53rem;
+    cursor: pointer;
+  }
+
   
-}
+  .footer-col .icons i {
+    color: #f9f7f0;
+  }
+  .footer-col .icons i:hover  {
+    color: #f9f7f0;
 
-.copyright {
-    grid-area: 5 / 5 / 5 / 5;
-    text-transform: lowercase;
-    text-transform: capitalize;
-    position: relative;
-    bottom: 18.5rem;
-    left: 0.5rem;
-}
+  }
+  @media (max-width: 768px) {
+    .footer {
+      position: relative;
+      bottom: 0;
+      left: 0;
+      transform: none;
+      width: 100%;
+      border-radius: 0;
+    }
+    .footer .footer-row {
+      padding: 1.25rem;
+      gap: 1rem;
+    }
+    .footer-col form {
+      display: block;
+    }
+    .footer-col form :where(input, button) {
+      width: 100%;
+    }
+    .footer-col form button {
+      margin: 0.625rem 0 0 0;
+    }
+  }
+
 
 @media (max-width: 600px) {
     .footer  {
       grid-template-areas: 
-*/
 
-/*footer-2*/
 
-/*footer  {
-    background-color: #072a40;
-    max-width: 100vh;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(10rem, 1fr));
-    grid-template-rows: 1fr;
-    grid-auto-flow: column;
-    
+
+
 
 
 }
-*/
+
 
 @media (min-width: 768px) {
     .container {
@@ -611,5 +585,6 @@ img {
     nav a {
       padding: 25px 1%;
     }
+
+
     
-  
