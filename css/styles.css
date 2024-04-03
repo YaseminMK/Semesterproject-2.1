@@ -493,7 +493,7 @@ img {
 
 }
 
-
+/*Explore*/
 .header-to-pages {
     background-color: #178ca4;
     display: flex;
@@ -522,8 +522,29 @@ img {
     left: 25rem;
     padding: 2.25rem 7.5rem;
     bottom: 1.5rem;
-   
+}
 
+
+
+.for-kids {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+   
+}
+
+.kids-txt {
+    text-transform: initial;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    gap: 0.5rem;
+    align-items: center;
+    flex-shrink: 5;
+    font-size: 0.9rem;
+ 
 }
 
 
