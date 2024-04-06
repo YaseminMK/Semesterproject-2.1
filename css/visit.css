@@ -1,0 +1,75 @@
+.header-visit {
+    background-color: #178ca4;
+    color: #f9f7f0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.visit-txt-site{
+    background: #072a40;
+    box-shadow: 0rem 0.25rem 0.25rem #00000040;
+    font-size: 2rem;
+    color: #f9f7f0;
+    position: relative;
+    padding: 3.25rem 7.5rem;
+    bottom: 7.5rem;
+    max-width: 50%;
+    left: 44rem;
+}
+.visit-h {
+    position: relative;
+    top: 9.5rem;
+    left: 7.5rem;
+    max-width: 42%;
+}
+
+.img-visit-site {
+    position: relative;
+    top: 4.5rem;
+    left: 1.5rem;
+}
+
+.map  {
+    margin-top: 7rem;
+
+}
+
+.box {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    border: 1rem solid #072a40;
+    background: #178ca4;
+    color: #f9f7f0;
+    max-width: 30%;
+    bottom: 26.5rem;
+    left: 48.5rem;
+    position: relative;
+}
+
+#timetable {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.information {
+    color: #f9f7f0;
+}
+
+.acc {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.info {
+    text-transform: initial;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1rem;
+}

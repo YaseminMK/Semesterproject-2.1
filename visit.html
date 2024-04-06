@@ -7,13 +7,9 @@
     <title>VISIT</title>
     <meta name="description" content="Here you can find all the information and details for a deligtful visit to our museum">
     <link href="css/styles.css" rel="stylesheet" type="text/css"> 
+    <link href="css/visit.css" rel="stylesheet" type="text/css"> 
     
-    <!--Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
-
-
+    
 </head>
 <body>
  <!--NAVIGATION-BAR-->
@@ -38,16 +34,16 @@
     </header>
 
     <main>
-        <div id="back-button"><a href="index.html">BACK TO MAIN</a></div>
-        <section class="header-to-pages">
-            <img class="img-visit-site"src="images/3.Exhbitionspaces/exhibition-header.png" alt="Picture of a exhbitionroom">
-            <h1>VISIT</h1>
+        <div class="back-button"><a href="index.html">BACK TO MAIN</a></div>
+        <section class="header-visit">
+            <img class="img-visit-site"src="images/5.visit/visit-header200.png" alt="Picture of a exhbitionroom">
+            <h1 class="visit-h">VISIT</h1>
             <p class="visit-txt-site">At Community science museum we are delighted to provide you with all the details you need to make your visit a seamless and captivating experience.</p>
-        </section>/.Header-to-pages
+        </section>
 
-        <section id="map">
+        <section class="map">
             <img src="images/5.visit/map.png" alt="a map which shows where the museum is situated">
-            <div id="box"></div>
+            <div class="box">
                 <p>The museum is located at Seilduksgata 15. The easiest way from city center is by tram to Birkelunden.</p>
                 <ul id="timetable">
                     <li>Monday</li>
@@ -58,24 +54,27 @@
                     <li>10:00-19:00</li>
                     <li>Saturday</li>
                     <li>09:00-16:00</li>
+                    <li>Sunday</li>
                     <li>09:00-13:00</li>
                 </ul>
-            <p></p>
-        </section>/#map
-        <section id="information">
-            <div class="rectangle-1">
-                <ul>
-                    <li>Accessibility</li>
-                    <img src="images/5.visit/acc.png" alt="Picture of a wheelchair">
-                        <p>The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the visually impaired.</p>
-                    <li #id="rectangle-en">Food and drink</li>
-                        <img src="images/5.visit/coffee.png" alt="Picture of cup of coffee and croissant">
-                        <p>There is a café attached to the museum where you can get light lunches, soft drinks, coffee, snacks and more.</p>
-                    <li>Shop</li>
-                        <img src="images/5.visit/shop.png" alt="Picture of a shop from above">
-                        <p>Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs that allow you to continue to explore science even after you’ve left the museum.</p>
-                </ul>
             </div>
+            <p></p>
+        </section>
+        <section class="information">
+            <ul class="rectangels">
+                    <li class="rectangle-1 acc">Accessibility
+                        <img src="images/5.visit/acc.png" alt="Picture of a wheelchair">
+                        <p class="info">The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the visually impaired.</p>
+                    </li>
+                    <li class="rectangle-2 acc">Food and drink
+                        <img src="images/5.visit/coffee.png" alt="Picture of cup of coffee and croissant">
+                        <p class="info">There is a café attached to the museum where you can get light lunches, soft drinks, coffee, snacks and more.</p>
+                    </li>
+                    <li class="rectangle-3 acc">Shop
+                        <img src="images/5.visit/shop.png" alt="Picture of a shop from above">
+                        <p class="info">Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs that allow you to continue to explore science even after you’ve left the museum.</p>
+                    </li>
+            </ul>
         </section>
     </main>
 
