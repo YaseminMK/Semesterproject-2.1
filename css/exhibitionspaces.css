@@ -1,44 +1,49 @@
 
-.header-exhibition {
+
+.header-to-pages {
     background-color: #178ca4;
-    color: #f9f7f0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    align-content: center;
 }
-   
 
-
-.text-box-exhib {
+.text-box {
     background: #072a40;
     text-transform: initial;
     box-shadow: 0rem 0.25rem 0.25rem #00000040;
     line-height: 2.5rem;
-    color: #f9f7f0;
+    max-width: 40%;
+    position: relative;
+    left: 26rem;
+    padding: 2.25rem 7.5rem;
+    bottom: 1.5rem;
+}
+
+.tb-exhib {
     max-width: 60%;
     position: relative;
-    padding: 2.25rem 7.5rem;
-    bottom: 0.5rem;
     left: 20rem;
 }
 
+.h1-headers {
+    padding: 3.5rem;
+}
 
-.headline-ex {
-    position: relative;
-    top: 7.5rem;
-    left: 3.5rem;
+.h1-exhibitionspaces {
     max-width: 50%;
 }
 
-.img-exhib {
+.img-header {
     position: relative;
-    top: 4.5rem;
+    top: 2.5rem;
+    left: 0.5rem;
 }
 
-.b-rectangle, .d-rectangle {
-    color: #f9f7f0;
-    background-color: #178ca460;
+
+.ex-rec {
     box-shadow: 0.25rem 0.25rem #00000040;
     display: flex;
     flex-direction: column;
@@ -49,7 +54,6 @@
 }
 
 .d-rectangle {
-    background-color: #178ca4;
     position: relative;
     left: 40rem;
     bottom: 7.5rem;
@@ -57,6 +61,10 @@
 
 .exhibition-rectangels-txt {
     padding: 3.5rem;
+}
+
+.h2-spaces {
+    padding: 2.5rem;
 }
 .cosmo {
     position: relative;
@@ -81,8 +89,7 @@
 }
 .img-wrap {
     display: flex;
-    max-width: 90%;
-    flex-direction: row;
+    flex-direction: row-reverse;
 }
 
 .images-ex {
@@ -91,5 +98,5 @@
     flex-direction: column;
     position: relative;
     bottom: 8.5rem;
-    left: 4.5rem;
+     left: 4.5rem;
 }

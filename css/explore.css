@@ -15,21 +15,22 @@
 }
  
 
-.img-explore-pg {
+.img-header {
     position: relative;
     top: 2.5rem;
     left: 0.5rem;
 }
 
-.explore-h {
+.h1-headers {
     padding: 3.5rem;
 }
+
+
 .text-box {
     background: #072a40;
     text-transform: initial;
     box-shadow: 0rem 0.25rem 0.25rem #00000040;
     line-height: 2.5rem;
-    color: #f9f7f0;
     max-width: 40%;
     position: relative;
     left: 26rem;
@@ -37,22 +38,16 @@
     bottom: 1.5rem;
 }
 
-.for-kids,
-.for-teachers,
-.for-researchers {
+.explore-sections {
     background-color: #178ca460;
     box-shadow: 0rem 0.25rem 0.25rem #00000040;
     display: flex;
     margin: 8rem;
-    color: #f9f7f0;
     position: relative;
     left: 8.5rem;
-   
-}
+  }
 
-.kids-txt,
-.teachers-txt,
-.researchers-txt {
+.txt-explore {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -61,12 +56,12 @@
     font-weight: 100;
     position: relative;
     left: -4.5rem; 
-}
+  }
 
 .teachers-txt {
     position: relative;
     left: 4.5rem;
-}
+  }
 
 
 .for-teachers {
@@ -74,12 +69,8 @@
     flex-direction: row-reverse;
     position: relative;
     left: -7.5rem;
-}
+  }
 
-.for-researchers {
-    display: flex;
-
-}
 
 .img-teachers,
 .img-researchers {
