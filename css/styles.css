@@ -3,9 +3,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
     max-width: 100%;
     color:#f9f7f0; 
+    text-overflow: hidden;
    
 }
 @font-face { 
@@ -31,9 +31,12 @@ grid-area: header;
 }
 
 main {
-grid-area: main;
-margin: 2rem;
+    grid-area: main;
+    margin: 2rem;
+    background-color: #f9f7f0;
+    margin-top: 4.5rem;
 }
+
 
 footer {
 grid-area: footer;
@@ -44,33 +47,36 @@ h1 {
     font-size: 6rem;
     font-weight: 250;
     font-style: italic;
-
 }
 
 h2 {
     font-size: 1.5em;
 }
 
-a {
+a, 
+li, 
+ul {
     text-decoration: none;
+    outline: none;
+    list-style: none;
 }
 
 a:visited { 
     color:#f9f7f0; 
 }
 a:hover { 
-    color:#f9f7f0; 
+    color:#a6a6a6; 
 }
 a:focus { 
-    color:y#f9f7f0; 
+    color:y#a6a6a6; 
 }
 a:hover, a:active { 
     color:#f9f7f0; 
 }
 
+
 img {
     object-fit: cover;
-    border: #f9f7f0;
 }
 
 
@@ -168,8 +174,6 @@ img {
     justify-content: flex-end;
 }
 
-
-
 .main-header-txt {
     font-size: 6rem;
 }
@@ -182,10 +186,6 @@ img {
     margin: 1.5rem;
  
 }
-
-
-
-
 /*Navigation to pages*/
 
 
@@ -199,8 +199,6 @@ img {
     background-color: #072a40;
     padding: 4.5rem;
 }
-
-
 
 .img-exhibition {
     padding: 0.5rem 2.5rem;
@@ -239,26 +237,22 @@ img {
 
 }
 
-
-  .spaces-txt,
-  .img-spaces{
+.spaces-txt,
+.img-spaces{
    grid-area: 1 / 2 / 2 /3;
  
   }
-  .get-txt,
-  .img-get {
+.get-txt,
+.img-get {
     grid-area: img-get;
     grid-area: 2/ 1/ 2/ 1;
 
   }
-
   .visit-txt,
   .img-visit {
     grid-area: img-vist;
     grid-area: 2/ 2 / 2/ 2;
   }
-
-
 .spaces-txt,
 .explore-txt{
     position:relative;
@@ -266,7 +260,6 @@ img {
     left: 4rem;
     border: #072a40;
 }
-
 .visit-txt,
 .get-txt {
     position: relative;
@@ -275,9 +268,6 @@ img {
     border: #072a40;
 }
 
-
-
-  
 /*About the museum-container*/
 
 .about {
@@ -325,14 +315,6 @@ img {
 .p-about-1 {
     padding-right: 1.5rem;
 }
-   
-  
-
-
-
-
-
-
 
 /*Events*/
 
@@ -380,10 +362,6 @@ img {
     border-bottom: 0.01rem solid #f9f7f0;
     padding: 1.5rem;
 }
-
-
-
-
 
 /*Footer*/
 
@@ -442,7 +420,6 @@ img {
     color: #f9f7f0;
 }
 
-
 form button {
     color: #072a40;
     outline: none;
@@ -477,9 +454,42 @@ form button {
 }
 
 
-
+/*HEADER-PAGES*/
 .back-button a{
     color: #178ca4;
+    line-height: 5.6rem;
+}
+.header-to-pages {
+    background-color: #178ca4;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+ 
+
+.text-box {
+    background: #072a40;
+    text-transform: initial;
+    box-shadow: 0rem 0.25rem 0.25rem #00000040;
+    line-height: 2.5rem;
+    max-width: 40%;
+    position: relative;
+    left: 26rem;
+    padding: 2.25rem 7.5rem;
+    top: 1.5rem
+}
+
+.img-header {
+  position: relative;
+  top: 2.5rem;
+  left: 0.5rem;
+}
+
+.h1-headers {
+  padding: 3.5rem;
 }
 
 

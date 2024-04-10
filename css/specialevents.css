@@ -1,25 +1,8 @@
-.header-to-pages {
-    background-color: #178ca4;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
 
-.text-box {
-    background: #072a40;
-    text-transform: initial;
-    box-shadow: 0rem 0.25rem 0.25rem #00000040;
-    line-height: 2.5rem;
-    max-width: 40%;
-    position: relative;
-    left: 26rem;
-    padding: 2.25rem 7.5rem;
-    bottom: 1.5rem;
+/*FOR SPECIAL EVENTS-PAGE*/
+.img-special {
+    max-width: 50%;
 }
-
 
 .h1-headers {
     padding: 3.5rem;
@@ -28,30 +11,20 @@
     max-width: 49%;
 }
 
-.img-header {
-    position: relative;
-    top: 2.5rem;
-    left: 0.5rem;
-}
-
-
-
-.con-2 {
-    right: 1.5rem;
- 
-}
-
 .containers {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 4.5rem;
-    margin: 2rem;
+    margin: 9.5rem;
     font-style: normal;
     max-width: 56%;
-   overflow-y: hidden;
 }
-
+.con {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
 .con-1 {
     margin-top: 1.5rem;
 }
@@ -60,63 +33,51 @@
     font-style: italic;
     font-weight: 300;
     letter-spacing: 0.5rem;
-    font-size: 2.5rem;
-}
-.small-text {
-    display: flex;
-    font-weight: 100;
-    gap: 7.5rem;
-    letter-spacing: 2.32px;
+    font-size: 2.0rem;
 }
 
-.small-text-under {
+.small-txt {
     display: flex;
-    gap: 4.5rem;
-    font-weight: 400;
-    letter-spacing: 1.32px;
+    gap: 1.5rem;
+}
+.info {
+    display: flex;
+   flex-direction: column;
 }
 
 .line-2 {
     border-bottom: 0.01rem solid #f9f7f0;
     padding: 1.5rem;
-    max-width: 40%;
-}
-.img-spe {
-    position: relative;
-    left: 37.5rem;
     max-width: 50%;
+    position: relative;
     bottom: 2.5rem;
 }
 
-.airplane {
-    top: 85.5rem;
-    position: absolute;
-    left: 35.5rem;
-    max-width: 37%;
-    box-shadow: 0rem 0.25rem 0.25rem #00000040;
-}
-
-.night {
-    position: absolute;
-    max-width: 37%;
-    bottom: -112.5rem;
-    left: 33.5rem;
-}
-
 .text-con {
-    max-width: 41%;
-    margin-top: 0.5rem;
-    margin-left: 1.5rem;
+    max-width: 50%;
     line-height: 1.5rem;
 }
-
 .buy-button {
     border: 0.09rem #f9f7f0 solid;
-    max-width: 19%;
+    max-width: 22%;
     padding: 0.5rem;
     position: relative;
-    top: 4.5rem;
-    left: 9.5rem;
     text-transform: uppercase;
     text-align: center;
+    top: 0.5rem;
+}
+.img-spe {
+    position: absolute;
+    box-shadow: 0rem 0.25rem 0.25rem #00000040;
+    max-width: 37%;
+    left: 44.5rem;
+}
+.airplane {
+    top: 77.5rem;
+}
+.night {
+    top: 106rem;
+}
+.energetica {
+    top: 138rem;
 }
