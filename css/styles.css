@@ -5,7 +5,6 @@
     padding: 0;
     max-width: 100%;
     color:#f9f7f0; 
-    text-overflow: hidden;
    
 }
 @font-face { 
@@ -36,23 +35,18 @@ main {
     background-color: #f9f7f0;
     margin-top: 4.5rem;
 }
-
-
 footer {
 grid-area: footer;
 }
 
-
 h1 {
-    font-size: 6rem;
+    font-size: 4.5rem;
     font-weight: 250;
-    font-style: italic;
 }
 
 h2 {
     font-size: 1.5em;
 }
-
 a, 
 li, 
 ul {
@@ -74,13 +68,9 @@ a:hover, a:active {
     color:#f9f7f0; 
 }
 
-
-img {
+ /*img {
     object-fit: cover;
-}
-
-
-
+ }*/
 /*Nav-bar*/
 
 .nav-bar {
@@ -89,7 +79,6 @@ img {
     justify-content: center;
     align-items: center;
     gap: 13rem;
-    list-style: none;
     position: relative;
     padding: 40px 20px;
     background: #f9f7f0;
@@ -151,7 +140,7 @@ img {
     align-items: center;
     justify-content: center;
     width: 80%;
-    position: fixed;
+    position: sticky;
     top: 0;
     right: 0;
     z-index: 100;
@@ -166,7 +155,6 @@ img {
     background-color: #072a40;
     text-transform: uppercase;
     padding: 6rem 5.5rem;
-    border: 6.5rem solid #f9f7f0;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -174,9 +162,6 @@ img {
     justify-content: flex-end;
 }
 
-.main-header-txt {
-    font-size: 6rem;
-}
 
 .front-pg-txt {
     font-size: 2.3rem;
@@ -225,10 +210,6 @@ img {
     grid-template-columns: 1fr 1fr;
     grid-auto-columns: 1fr 1fr;
     padding: 3.5rem;
-    overflow: hidden;
-   
-
-   
 }
 .explore-txt, 
 .img-explore{
@@ -256,7 +237,7 @@ img {
 .spaces-txt,
 .explore-txt{
     position:relative;
-    top: 12rem;
+    top: 10rem;
     left: 4rem;
     border: #072a40;
 }
@@ -280,7 +261,6 @@ img {
 }
 
 .header-about {
-    font-size: 2.1rem;
     text-transform: uppercase;
     padding: 1.5rem;
     font-weight: 100;
@@ -300,11 +280,8 @@ img {
     flex-direction: column;
     gap: 0.5rem;
     align-items: center;
-    flex-shrink: 5;
+    flex-shrink: 1;
     font-size: 0.9rem;
- 
-
-
 }
 
 .img-about {
@@ -369,14 +346,10 @@ img {
     background: #072a40;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
     text-transform: uppercase;
 }
 .footer-img {
-    padding-bottom: 5.5rem;
     padding-right: 5.5rem;   
 }
 
@@ -386,7 +359,6 @@ img {
 }
 
 .ft-1 {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
@@ -436,14 +408,10 @@ form button {
     cursor: pointer;
 }
 
-.ft-3 {
-    flex-direction: column;
-    flex-wrap: wrap;
-}
+
 .icons {
     display: flex;
     padding: 1.5rem;
-    display: flex;
     gap: 1.5rem;
 }
 .copyright {
@@ -493,7 +461,14 @@ form button {
 }
 
 
+
+
+
+
+
 /*MEDIA Q*/
+
+/*
 @media (max-width: 600px) {
     .footer  {
       grid-template-areas:
@@ -555,6 +530,338 @@ form button {
     nav a {
       padding: 25px 1%;
     }
+    */
 
+   /* Media Queries*/
+    
+   /*@media (max-width: 1410px) {
+
+    .front-page {
+       font-size: 6rem;
+    }
+
+   }*/
+
+
+@media (max-width: 1330px) {
+        h1 {
+            font-size: 4.0rem;
+        }
+        .front-page {
+            padding: 5rem 8.5rem;
+        }
+        .img-about {
+            padding-left: 0;
+            max-width: 50%;
+        }
+        .rectangels {
+            grid-template-columns: 16rem 16rem 16rem;
+        }
+        .copyright {
+            padding-left: 0.5rem;
+        }
+    }
+
+@media (max-width: 1250px) {
+        .front-page {
+            padding: 5rem 6.5rem;
+        }
+        .nav-containers{
+            font-size: 1rem;
+        }
+        .spaces-txt, .explore-txt {
+            top: 9rem;
+        }
+        .icons {
+            gap: 0.5rem;
+        }
+
+    }
+
+@media  (max-width: 1200px) {
+        h1 {
+            font-size: 3.5rem;
+        }
+
+        .front-page {
+            padding: 5rem 8.5rem;
+        }
+        .img-exhibition {
+            padding: 0;
+
+        }
+
+        .spaces-txt, .explore-txt {
+        top: 7rem;
+        }
+        .rectangels {
+            grid-template-columns: 15rem 15rem 15rem;
+        }
+        .about-txt {
+            font-size: 0.8rem;
+        }
+        
+        .img-about {
+            padding-left: 0;
+            max-width: 44%;
+        }
+
+        .copyright {
+            padding-left: 0;
+            padding-top: 5.5rem;
+        }
+        .icons {
+            gap: 0.5rem;
+        }
+        .footer-content {
+            gap: 0.4rem;
+        }
+    }
+@media (max-width: 1120px) {
+    .front-pg-txt {
+        font-size: 2rem;
+    }
+    .front-page {
+        padding: 5rem 5.5rem;
+    }
+    .nav-containers{
+        padding: 3.5rem;
+    }
+    .img-nav-menu {
+        padding: 1.5rem;
+    }
+
+    .spaces-txt, .explore-txt {
+        left: 2rem;
+    }
+
+    .visit-txt,
+    .get-txt{
+    top: 7.5rem;
+    }
+    .about-txt {
+        font-size: 0.75rem;
+    }
+    
+    .img-about {
+        padding-left: 0;
+        max-width: 50%;
+    }
+    .rectangels {
+        grid-template-columns: 13rem 13rem 13rem;
+        grid-template-rows: 30rem auto;
+    }
+    .footer-content {
+        gap: 0.4rem;
+    }
+    .icons {
+        gap: 0.2rem;
+    }
+  
+    .copyright {
+        padding-left: 0;
+        padding-top: 5.5rem;
+        font-size: 0.8rem;
+    }
+    .footer {
+        font-size: 0.9rem;
+    }
+}
+       
+@media (max-width: 992px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            .front-page {
+                padding: 3rem 2.5rem;
+            }
+            .front-pg-txt {
+                font-size: 1rem;
+            }
+
+            .nav-containers {
+                padding: 2.5rem;
+                margin: 0;
+            }
+            .about-txt {
+                font-size: 0.75rem;
+            }
+            
+            .img-about {
+                padding-left: 0;
+                max-width: 50%;
+            }
+            .rectangels {
+                grid-template-columns: 13rem 13rem 13rem;
+            }
+            .footer-content {
+                gap: 0.4rem;
+            }
+            .icons {
+                gap: 0.2rem;
+            }
+          
+            .copyright {
+                padding-left: 0;
+                padding-top: 5.5rem;
+                font-size: 0.8rem;
+            }
+            .footer {
+                font-size: 0.9rem;
+            }
+    
+}
+    
+@media  (max-width: 768px) {
+    h2 {
+        font-size: 1em;
+    }
+    .front-page {
+        padding: 5rem 1.5rem;
+    }
+    .nav-containers{
+        padding: 1.5rem;
+    }
+    .img-nav-menu {
+        font-size: 0.6rem;
+    }
+
+    .spaces-txt, .explore-txt {
+        top: 5rem;
+    }
+
+    .visit-txt,
+    .get-txt{
+    top: 4.5rem;
+    }
+    .about-txt {
+        font-size: 0.60rem;
+    }
+    
+    .img-about {
+        padding-left: 0;
+        max-width: 50%;
+    }
+    .rectangels {
+        grid-template-columns: 9rem 9rem 9rem;
+        grid-template-rows: 23rem auto;
+    }
+    .rectangle-2,
+    .rectangle {
+        font-size: 0.6rem;
+        padding: 0.5rem;
+    }
+    .img-events {
+        padding: 0;
+    }
+    .footer-content {
+        gap: 3.5rem;
+        margin-top: 1.5rem;
+    }
+    .footer-img {
+        padding-right: 0;
+    }
+    .icons {
+        gap: 0.2rem;
+    }
+  
+    .copyright {
+        padding-left: 0;
+        padding-top: 5.5rem;
+        font-size: 0.8rem;
+    }
+    .footer {
+        font-size: 0.9rem;
+    }
+}
+
+@media  (max-width: 601px) {
+
+    .main {
+        margin: 1rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1em;
+    }
+    .front-pg-txt {
+        font-size: 1rem;
+    }
+    .front-page {
+        padding: 2rem 1.5rem;
+    }
+    .nav-containers{
+        padding: 0.5rem;
+        border: 1.5rem solid #f9f7f0;
+    }
+    .img-nav-menu {
+        padding: 0.5rem;
+        font-size: 0.6rem;
+    }
+
+    .spaces-txt, .explore-txt {
+        top: 5rem;
+        left: 2rem;
+    }
+
+    .visit-txt,
+    .get-txt{
+    top: 4.5rem;
+    }
+    .about {
+        border: 0.3rem solid #178ca4;
+    }
+    .about-content {
+        padding: 0;
+    }
+    .about-txt {
+        font-size: 0.60rem;
+        border: 0.1rem solid #178ca4;
+    }
+    
+    .img-about {
+        padding-left: 0;
+        max-width: 50%;
+    }
+    .rectangels {
+        grid-template-columns: 9rem 9rem 9rem;
+        grid-template-rows: 23rem auto;
+        grid-gap: 0.5rem;
+    }
+    .rectangle-2,
+    .rectangle {
+        font-size: 0.6rem;
+        padding: 0.5rem;
+    }
+    .img-events {
+        padding: 0;
+    }
+    .footer-content {
+        gap: 0.9rem;
+    }
+    .footer-img {
+        padding-right: 0;
+    }
+    .icons {
+        gap: 0.2rem;
+    }
+  
+    .copyright {
+        padding-left: 0;
+        padding-top: 5.5rem;
+        font-size: 0.8rem;
+    }
+    .footer {
+        font-size: 0.9rem;
+    }
+}
+    
 
     
+        
+
+
+
+  
