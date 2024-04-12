@@ -1,17 +1,8 @@
 /*FOR EXHIBITION SPACES PAGE*/
-.h1-exhibitionspaces {
+.h1-exhibitionspaces{
     max-width: 50%;
 }
 
-.img-header {
-    position: relative;
-    top: 2.5rem;
-    left: 0.5rem;
-}
-
-.tb-exhib {
-    left: 24.5rem;
-}
 .ex-rec {
     box-shadow: 0.25rem 0.25rem #00000040;
     display: flex;
@@ -28,6 +19,10 @@
 }
 .exhibition-rectangels-txt {
     padding: 3.5rem;
+}
+.dark-color {
+    color: #072a40;
+
 }
 .h2-spaces {
     padding: 2.5rem;
@@ -59,10 +54,114 @@
 }
 
 .images-ex {
-    display: flex;
+  display: flex;
     gap: 1.5rem;
     flex-direction: column;
     position: relative;
     bottom: 8.5rem;
-     left: 4.5rem;
+    justify-content: center;
+    align-items: center;
 }
+
+.image-1{
+    max-width: 100%;
+}
+/*Media qui*/
+@media (max-width: 1250px) {
+    .images-ex {
+        margin-left: 7.5rem;
+    }
+    .image-1 {
+        max-width: 28%;
+    }
+
+}
+
+@media (max-width: 1120px) {
+   
+    .ex-rec {
+        margin: 0;
+        left: 4.5rem;
+    }
+    .d-rectangle, .robot {
+        left: 39.5rem;
+    }
+
+    .cosmo {
+        left: 1.5rem
+    }
+    
+    .ecology,
+    .bio {
+        left: 1.5rem;
+
+    }
+    .exhibition-rectangels-txt {
+        padding: 2.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .ex-rec {
+        max-width: 41%;
+    }
+    .d-rectangle,
+    .robot {
+        left: 31.5rem;
+    }
+    .ecology,
+    .bio {
+        left: 4.5rem;
+
+    }
+   
+}
+@media  (max-width: 768px) {
+    p {
+        font-size: 0.65rem;
+    }
+    .h1-exhibitionspaces {
+        max-width: 20%;
+    }
+    .d-rectangle, .robot {
+        left: 26.5rem;
+    }
+    .exhibition-rectangels-txt {
+        padding: 1.5rem;
+    }
+
+    .ecology,
+    .bio {
+        left: 4.5rem;
+
+    }
+   
+}
+
+@media (max-width: 601px) {
+
+    .d-rectangle, .robot {
+        left: 20.5rem;
+    }
+    .ecology,
+    .bio {
+        left: 4.5rem;
+    }
+}
+
+@media (max-width:480px) {
+    .h1-exhibitionspaces {
+        max-width: 7%;
+    }
+    .exhibition-rectangels-txt {
+        padding: 0.5rem;
+    }
+    .d-rectangle, .robot {
+        left: 15.5rem;
+    }
+
+    .ecology, .bio {
+        left: 1.5rem;
+    }
+}
+    

@@ -2,15 +2,13 @@
 /* FOR GET INVOLVED PAGE*/
 .h1-headers {
     padding: 3.5rem;
+    max-width: 30%;
 }
 
-.img-involved {
-    max-width: 47%;
+.img-header {
+    max-width: 35%;
 }
 
-.h1-involved {
-    max-width: 50%;
-}
 
 .text-involved {
     max-width: 49%;
@@ -22,14 +20,16 @@
     display: flex;
     flex-direction: column;
     margin: 1.5rem;
-    gap: 19.5rem;
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
     
 }
 .m-get {
     margin-top: 4.5rem;
 }
   
-.get-box {
+.rectangle {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -39,15 +39,7 @@
     max-width: 80%;
     box-shadow: 0rem 0.25rem 0.25rem #00000040;
 }
-.get-box-2 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    gap: 1.5rem;
-    box-shadow: 0rem 0.25rem 0.25rem #00000040;
-}
+
 .get-text {
     display: flex;
     flex-direction: column;
@@ -55,19 +47,89 @@
     max-width: 44%;
     margin-top: 5.5rem;
     }
-.on-top {
-    position: absolute;
-    top: 91.5rem;
-    left: 25.5rem;
-    max-width: 67%;
-}
+
 .get-img {
     max-width: 45%;
 }
-  .get-text-2 {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    max-width: 44%;
-    margin-top: 2.5rem;
+
+@media (max-width: 1120px) {
+    .header-to-pages {
+        padding: 1.5rem;
+    }
+    .h1-headers {
+        padding: 0.5rem;
+        max-width: 16%;
+    }
+    .text-box {
+        left: -0.5rem;
+    }
+}
+
+
+    @media (max-width: 992px) {
+        .rectangle {
+            gap: 3.5rem
+       }
+       .img-header {
+        max-width: 29%;
+        }
+        .text-box {
+            left: -1.5rem;
+            top: 6.5rem;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .h1-headers {
+            padding: 1rem;
+            max-width: 10%;
+        }
+        .img-header {
+            max-width: 30%;
+        }
+        .text-box {
+            left: 1.5rem;
+            top: 7.5rem;
+        }
+        .rectangle {
+            gap: 2.5rem
+        }
+        .get-text {
+        max-width: 40%;
+        margin-top: 1.5rem;
+       }
+       .get-img {
+        max-width: 37%;
+       }
+    }
+    @media  (max-width: 601px) { 
+        .h1-headers {
+            max-width: 3%;
+        }
+        .text-box {
+            left: 1.5rem;
+            top: 5.5rem;
+        }
+        .get-text {
+            margin-top: 0.5rem;
+            }
+    }
+    
+    @media  (max-width: 480px) {
+        .img-header {
+            max-width: 25%;
+        }
+        
+        .get-wrap {
+            margin: 0.1rem;
+            gap: 1.5rem
+        }
+        .rectangle {
+            gap: 1.5rem;
+        }
+
+        .get-text {
+            gap: 0.5rem;
+        }
+
     }

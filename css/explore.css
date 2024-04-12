@@ -6,7 +6,8 @@
     display: flex;
     margin: 8rem;
     position: relative;
-    left: 8.5rem;
+    position: relative;
+    left: 7.5rem;
   }
 
 .txt-explore {
@@ -44,59 +45,47 @@
 }
 
 /*MEDIA Q*/
-@media (max-width: 600px) {
-    .footer  {
-      grid-template-areas: 
-    }
+
+@media (max-width: 1330px) {
+
+  .img-kids,
+  .img-teachers,
+  .img-researchers {
+    max-width: 55%;
+  }
+
 }
 
-
-@media (min-width: 768px) {
-    .container {
-      grid-template-columns: 1fr 2fr 1fr;
-      grid-template-rows: 100px minmax(150px, auto) 100px;
-      grid-template-areas: 
-        "header header header"
-        "nav main aside"
-        "footer footer footer";
-    }
-  }
-  
-  @media (min-width: 992px) {
-    .container {
-      grid-template-areas: 
-        "header header header"
-        "nav main aside"
-        "nav footer footer";
-    }
-  }
-  
-  @media(max-width: 60rem){
-    .menu {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 100;
-    background-color: #f9f7f0;
-    transition: all 0.2s ease-in-out;
-    }
+@media (max-width:768px) {
+  .h1-headers {
+    max-width: 13%;
+    padding: 1.5rem;
 }
-@media only screen and (min-width: 1140px) {
+  .img-header {
+    max-width: 45%;
+  }
+  .explore-sections {
+    margin: 2rem;
+    left: 2rem;
+  }
+  .explore-box {
+    top: 5.5rem;
+  }
 
-    .wrapper {
-      width: 1026px;
-      margin: 0 auto;
-    }
-  
-    .title {
-      font-size: 2em;
-    }
-  
-    nav a {
-      padding: 25px 1%;
-    }
+  .for-teachers {
+    left: -7.5rem;
+  }
+  .img-kids, .img-teachers, .img-researchers {
+    max-width: 50%;
+  }
+  .txt-explore {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width:480px) {
+  .for-teachers {
+    left: -1.5rem;
+}
+
 }
