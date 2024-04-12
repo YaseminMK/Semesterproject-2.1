@@ -136,7 +136,7 @@ a:hover, a:active {
 
 #check {display: none;}
 
-@media(max-width: 708px){
+/*@media(max-width: 708px){
     .menu {
     flex-direction: column;
     align-items: center;
@@ -475,80 +475,6 @@ form button {
 
 /*MEDIA Q*/
 
-/*
-@media (max-width: 600px) {
-    .footer  {
-      grid-template-areas:
-    }
-
-
-
-
-
-
-}
-
-
-@media (min-width: 768px) {
-    .container {
-      grid-template-columns: 1fr 2fr 1fr;
-      grid-template-rows: 100px minmax(150px, auto) 100px;
-      grid-template-areas: 
-        "header header header"
-        "nav main aside"
-        "footer footer footer";
-    }
-  }
-  
-  @media (min-width: 992px) {
-    .container {
-      grid-template-areas: 
-        "header header header"
-        "nav main aside"
-        "nav footer footer";
-    }
-  }
-  
-  @media(max-width: 60rem){
-    .menu {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 100;
-    background-color: #f9f7f0;
-    transition: all 0.2s ease-in-out;
-    }
-}
-@media only screen and (min-width: 1140px) {
-
-    .wrapper {
-      width: 1026px;
-      margin: 0 auto;
-    }
-  
-    .title {
-      font-size: 2em;
-    }
-  
-    nav a {
-      padding: 25px 1%;
-    }
-    */
-
-   /* Media Queries*/
-    
-   /*@media (max-width: 1410px) {
-
-    .front-page {
-       font-size: 6rem;
-    }
-
-   }*/
-
 
 @media (max-width: 1330px) {
         h1 {
@@ -676,46 +602,53 @@ form button {
 }
        
 @media (max-width: 992px) {
-            h1 {
-                font-size: 2.5rem;
-            }
-            .front-page {
-                padding: 3rem 2.5rem;
-            }
-            .front-pg-txt {
-                font-size: 1rem;
-            }
+    h1 {
+        font-size: 2.5rem;
+    }
 
-            .nav-containers {
-                padding: 2.5rem;
-                margin: 0;
-            }
-            .about-txt {
-                font-size: 0.75rem;
-            }
-            
-            .img-about {
-                padding-left: 0;
-                max-width: 50%;
-            }
-            .rectangels {
-                grid-template-columns: 13rem 13rem 13rem;
-            }
-            .footer-content {
-                gap: 0.4rem;
-            }
-            .icons {
-                gap: 0.2rem;
-            }
-          
-            .copyright {
-                padding-left: 0;
-                padding-top: 5.5rem;
-                font-size: 0.8rem;
-            }
-            .footer {
-                font-size: 0.9rem;
-            }
+    a {
+        font-size: 0.5rem;
+    }
+    p {
+        font-size: 0.75rem;
+    }
+    .nav-bar {
+        padding: 2px 16px;
+    }
+    .logo {
+        width: 7rem;
+    }
+    .front-page {
+        padding: 3rem 2.5rem;
+    }
+    .front-pg-txt {
+        font-size: 1rem;
+    }        
+
+    .nav-containers {
+        padding: 2.5rem;
+        margin: 0;
+    }
+    
+    .img-about {
+        padding-left: 0;
+        max-width: 50%;
+    }
+    .rectangels {
+        grid-template-columns: 13rem 13rem 13rem;
+    }
+    .footer-content {
+        gap: 0.4rem;
+    }
+    .icons {
+        gap: 0.2rem;
+    }
+  
+    .copyright {
+        padding-left: 0;
+        padding-top: 5.5rem;
+        font-size: 0.8rem;
+    }
     
 }
     
@@ -790,11 +723,14 @@ form button {
     h1 {
         font-size: 2rem;
     }
-    h2 {
-        font-size: 1em;
+    a {
+        font-size: 0.5rem;
     }
-    .front-pg-txt {
-        font-size: 1rem;
+    p {
+        font-size: 0.6rem;
+    }
+    .nav-bar {
+        padding: 2px 16px;
     }
     .front-page {
         padding: 2rem 1.5rem;
@@ -805,7 +741,7 @@ form button {
     }
     .img-nav-menu {
         padding: 0.5rem;
-        font-size: 0.6rem;
+      
     }
 
     .spaces-txt, .explore-txt {
@@ -823,14 +759,10 @@ form button {
     .about-content {
         padding: 0;
     }
-    .about-txt {
-        font-size: 0.60rem;
-        border: 0.1rem solid #178ca4;
-    }
     
     .img-about {
         padding-left: 0;
-        max-width: 50%;
+        max-width: 45%;
     }
     .rectangels {
         grid-template-columns: 9rem 9rem 9rem;
@@ -839,7 +771,6 @@ form button {
     }
     .rectangle-2,
     .rectangle {
-        font-size: 0.6rem;
         padding: 0.5rem;
     }
     .img-events {
@@ -860,8 +791,73 @@ form button {
         padding-top: 5.5rem;
         font-size: 0.8rem;
     }
-    .footer {
-        font-size: 0.9rem;
+}
+
+@media  (max-width: 480px) {
+
+    .main {
+        margin: 1rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 0.7em;
+    }
+    a {
+        font-size: 0.5rem;
+    }
+    p {
+        font-size: 0.5rem;
+    }
+    .nav-bar {
+        padding: 2px 16px;
+    }
+    .front-page {
+        padding: 1rem 3.5rem;
+    }
+    .front-pg-txt {
+        font-size: 0.7rem;
+    }
+    
+    .img-about {
+        max-width: 39%;
+    }
+  
+    .img-events {
+        padding: 0;
+    }
+    .footer-content {
+        gap: 0.5rem;
+    }
+    .footer-img {
+        max-width: 9.5%;
+    }
+
+    .subscribe-txt {
+        padding-right: 7.5rem;
+    }
+    .footer-content {
+        gap: 0.1rem;
+    }
+    .ft-2 input {
+        height: 0.9rem;
+        border-radius: 0.30rem;
+        padding-left: 0.1rem;
+    }
+    form button {
+        padding: 0.2rem;
+    }
+
+    .icons {
+        padding: 0.5rem;
+        max-width: 20%;
+    }
+  
+    .copyright {
+        padding-left: 0.09px;
+        padding-top: 2.5rem;
+
     }
 }
     
