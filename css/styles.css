@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     max-width: 100%;
+    color: #178ca4;
 }
 @font-face { 
     font-family: "Mulish";
@@ -59,7 +60,7 @@ ul {
 
 }
 p {
-    color:#178ca4;
+    color:#072a40;
     font-size: 1rem;
 }
 
@@ -115,17 +116,6 @@ p {
 
 }
 
-.open-menu {
-    top: 50%;
-    right: 20px;
-    translate: translateY(-50%)
-}
-.close-menu {
-    top: 20px;
-    right: 20px;
-}
-
-#check {display: none;}
 
 /*Main-page*/
 
@@ -216,7 +206,6 @@ p {
 .about {
   font-weight: 100;
   border: 1.5rem solid #178ca480;
-  color:#178ca4;
   text-transform: initial;
   letter-spacing: normal;
   box-shadow: 0rem 0.25rem 0.25rem #00000040;
@@ -227,7 +216,6 @@ p {
     text-transform: uppercase;
     padding: 1.5rem;
     font-weight: 100;
-    color:#178ca4;
 }
 .about-content {
     display: flex;
@@ -235,7 +223,6 @@ p {
     align-items: center;
     gap: 1.5rem;
     padding: 1.5rem;
-    color:#178ca4;
 }
 
 
@@ -247,7 +234,6 @@ p {
     align-items: center;
     flex-shrink: 1;
     font-size: 0.9rem;
-    color:#178ca4;
 }
 
 .img-about {
@@ -286,10 +272,11 @@ p {
 
 .rectangle {
     background-color: #178ca460;
-    
-    
+    color: #f9f7f0;
 }
-
+.rectangle a{
+    color: #f9f7f0;
+}
 .rectangle-2 {
     background-color: #178ca4;
 }
@@ -411,7 +398,6 @@ form button {
 
 /*HEADER-PAGES*/
 .back-button a{
-    color: #178ca4;
     line-height: 5.6rem;
 }
 .header-to-pages {
@@ -433,6 +419,7 @@ form button {
     right: 7rem;
     padding: 1.25rem 2.5rem;
     top: 14.5rem;
+    color: #178ca4;
 }
 
 .img-header {
