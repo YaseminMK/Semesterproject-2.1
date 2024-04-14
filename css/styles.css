@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     max-width: 100%;
-    color: #178ca4;
 }
 @font-face { 
     font-family: "Mulish";
@@ -285,7 +284,6 @@ p {
 .rectangle-2,
 .rectangle {
     padding: 1.5rem;
-    color: #18b7be;
  
 }
 
@@ -437,8 +435,7 @@ form button {
 }
 
 .dark-color {
-    color: #072a40;
-
+    color: #f9f7f0;
 }
 
 
