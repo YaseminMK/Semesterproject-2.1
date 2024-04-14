@@ -4,9 +4,6 @@
     margin: 0;
     padding: 0;
     max-width: 100%;
-    color:#f9f7f0; 
-    color:#178ca4;
-   
 }
 @font-face { 
     font-family: "Mulish";
@@ -40,10 +37,17 @@ grid-area: footer;
 h1 {
     font-size: 4.5rem;
     font-weight: 250;
+    color:#178ca4;
 }
 
 h2 {
+    font-size: 2.3rem;
+    color:#178ca4;
+}
+
+h3 {
     font-size: 1.5em;
+   color: #072a40;
 }
 a, 
 li, 
@@ -51,24 +55,14 @@ ul {
     text-decoration: none;
     outline: none;
     list-style: none;
+    color: #072a40;
+
 }
 p {
     color:#178ca4;
     font-size: 1rem;
 }
 
-a:visited { 
-    color:#f9f7f0; 
-}
-a:hover { 
-    color:#a6a6a6; 
-}
-a:focus { 
-    color:y#a6a6a6; 
-}
-a:hover, a:active { 
-    color:#f9f7f0; 
-}
 
 /*Nav-bar*/
 
@@ -148,8 +142,7 @@ a:hover, a:active {
 
 
 .front-pg-txt {
-    font-size: 2.3rem;
-    text-transform: capitalize;
+    text-transform: initial;
     font-weight: 100;
     align-self: center;
     margin: 1.5rem;
@@ -358,6 +351,7 @@ a:hover, a:active {
 }
 .update-txt {
     font-weight: 700;
+    color: #f9f7f0;
 }
 .ft-2 input {
     height: 2.5rem;
@@ -367,6 +361,11 @@ a:hover, a:active {
     caret-color: #f9f7f0;
     color: #f9f7f0;
     padding-left: 1.6rem;
+}
+
+.footer-content.ft-1 li a ,
+.footer-content.ft-2 li a {
+    color: #f9f7f0 
 }
 
 .ft-2 input::placeholder {
@@ -396,6 +395,9 @@ form button {
     padding-top: 4.5rem;
     align-content: space-between;
 }
+.subscribe-txt {
+    color:#f9f7f0;
+}
 .icons {
     display: flex;
     flex-direction: column;
@@ -403,6 +405,7 @@ form button {
 .copyright {
     text-transform: initial;
     padding-top: 4.5rem;
+    color: #f9f7f0;
 }
 
 
@@ -516,7 +519,7 @@ form button {
         }
 }
 @media (max-width: 1120px) {
-    .front-pg-txt {
+    .h2 {
         font-size: 2rem;
     }
     .front-page {
@@ -570,7 +573,7 @@ form button {
     .front-page {
         padding: 3rem 2.5rem;
     }
-    .front-pg-txt {
+    .h2 {
         font-size: 1rem;
     }        
 
@@ -593,7 +596,7 @@ form button {
 }
     
 @media  (max-width: 768px) {
-    h2 {
+    h3 {
         font-size: 1em;
     }
     .front-page {
@@ -719,8 +722,6 @@ form button {
         }
     }
 
-
-
 @media (max-width: 480px) {
 
     .main {
@@ -729,7 +730,7 @@ form button {
     h1 {
         font-size: 1.5rem;
     }
-    h2 {
+    h3 {
         font-size: 0.7em;
     }
     a {
@@ -782,16 +783,15 @@ form button {
         padding: 0.5rem;
         max-width: 20%;
     }
-}
     .text-box {
         left: 2.5rem;
     }
-
-    @media (max-width: 380px) {
-        .ft-1 {
-            flex-direction: column;
-        }
+}
+@media (max-width: 380px) {
+    .ft-1 {
+        flex-direction: column;
     }
+}
 
     
         
